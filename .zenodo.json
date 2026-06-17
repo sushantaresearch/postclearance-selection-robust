@@ -1,0 +1,24 @@
+{
+  "title": "Selection-Robust Targeting of Post-Clearance Undervaluation Audits: reproducibility package",
+  "upload_type": "software",
+  "description": "Code that reproduces every figure, table, and proposition check in the paper 'Selection-Robust Targeting of Post-Clearance Undervaluation Audits: Correcting for Inspection-Induced Label Bias'. Three self-contained scripts (numpy and scikit-learn, CPU only): (1) paper1_backbone.py reproduces the operating points, the identification ladder, the held-out policy uplift, and the inspected-only evaluation bias; (2) paper1_prop6_verify.py numerically confirms the minimum-audit-allocation rule (Proposition 6); (3) paper1_adverse_grid.py reproduces the adverse-DGP band-intensity sweep showing the policy uplift is a monotone function of the duty mass hidden in the structural blind band. Library versions are pinned for exact reproducibility. A fourth script, paper1_consistency.py, confirms the finite-sample consistency and interval coverage of the design estimator across sample sizes (root-n rate). A fifth script, paper1_bandsize.py, sweeps the blind band's size to show the policy gain is robust across band extents.",
+  "creators": [
+    {
+      "name": "Paul, Sushanta",
+      "orcid": "0009-0007-8071-6971"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "customs audit targeting",
+    "selective labels",
+    "post-clearance audit",
+    "doubly robust estimation",
+    "conformal prediction",
+    "policy learning",
+    "public revenue",
+    "trade misinvoicing",
+    "trustworthy AI"
+  ]
+}
