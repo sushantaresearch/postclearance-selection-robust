@@ -1,0 +1,5 @@
+# Pinned to the versions the reported numbers were validated on. CPU only; no GPU.
+# Requires CPython 3.11 or newer.
+numpy==2.4.4
+scikit-learn==1.8.0
+matplotlib==3.10.8
