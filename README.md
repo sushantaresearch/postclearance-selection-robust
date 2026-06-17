@@ -85,4 +85,4 @@ Code released under the MIT License (see `LICENSE`).
 
 ## Citation
 
-If you use this code, please cite the paper. A Zenodo DOI will be added here after the first public archival release.
+If you use this code, please cite the paper. This code is permanently archived on Zenodo at https://doi.org/10.5281/zenodo.20735343 (concept DOI, which always resolves to the latest release).
