@@ -18,14 +18,16 @@ All experiments are simulation-based; no administrative data are used or require
 | `paper1_bandsize.py` | Blind-band-size robustness sweep (Section 6.6): band share, the recoverable duty the band conceals, the design estimator's percent bias, and clearance versus selection-robust top-five-percent capture and uplift as the band's covariate extent is varied. |
 | `paper1_ignorability.py` | Post-clearance ignorability-violation sensitivity sweep, Table 6 (Section 6.2): leaking the unobserved confounder into the audit logit with strength lambda, the design estimator's percent bias and the hidden-selection tilt as ignorability fails, and the marginal-sensitivity-model breakdown the design arm needs to still cover the population value. |
 | `paper1_coverage.py` | Conformal coverage and the calibrated-uncertainty layer (Section 5.4 and Section 6.1, 6.3, 6.4): the selection-valid coverage-by-stratum table (marginal versus Mondrian, on the clearance versus the post-clearance arm), the conformalized-quantile-regression risk-coverage curve and the deferred-duty abstention numbers, and the three uncertainty-layer stress tests, failing overlap on the blind band, small sample down to two thousand declarations, and noisy band stratification up to forty percent mislabeling. Pass `quick` as the first argument for a fast smoke check at reduced sample size and seed count. |
+| `paper1_attribution.py` | Supplementary Figure S1 (Section S3): the global permutation feature importances of the Stage-1 duty-scoring model, and the assumption-free Manski lower bound (about 71 percent of the true population value). |
 
 ## Requirements
 
-CPU only. Pinned versions (see `requirements.txt`):
+CPU only; CPython 3.11 or newer. Pinned versions (see `requirements.txt`):
 
 ```
 numpy==2.4.4
 scikit-learn==1.8.0
+matplotlib==3.10.8
 ```
 
 ```bash
@@ -43,13 +45,14 @@ python paper1_consistency.py
 python paper1_bandsize.py
 python paper1_ignorability.py
 python paper1_coverage.py        # add `quick` for a fast smoke check
+python paper1_attribution.py
 ```
 
-On a single CPU the backbone runs in roughly six to nine minutes at `N=60000` and twelve seeds; `paper1_policy.py` at its fifty-seed default and `paper1_coverage.py` at full scale (it fits cross-fitted estimators inside the overlap and small-sample stress sweeps) are the longest, the others are faster; `paper1_coverage.py quick` finishes in about a minute. Library versions are pinned so the reported numbers reproduce exactly; on a different stack the qualitative results hold and the third or fourth significant digit may move.
+On a single CPU the backbone runs in roughly six to nine minutes at `N=60000` and twelve seeds; `paper1_policy.py` at its fifty-seed default and `paper1_coverage.py` at full scale (it fits cross-fitted estimators inside the overlap and small-sample stress sweeps) are the longest, the others are faster; `paper1_coverage.py quick` runs the same cross-fitted pipeline at reduced sample size and seed count and finishes in a few minutes rather than the full runtime. Library versions are pinned so the reported numbers reproduce exactly; on a different stack the qualitative results hold and the third or fourth significant digit may move.
 
 ## Environment and seeds
 
-CPython 3.11 or newer (required by the pinned `numpy` and `scikit-learn`); CPU only and OS-independent. All randomness is seeded explicitly inside each script with fixed base seeds (for example 1000 for the operating points, 3000 for the identification ladder, 4000 for the uplift split, and 5000 for the inspected-only check) offset by the replicate index, so every run is deterministic. Installing the two pinned packages into a clean environment reproduces the reported values.
+CPython 3.11 or newer (required by the pinned `numpy`, `scikit-learn`, and `matplotlib`); CPU only and OS-independent. All randomness is seeded explicitly inside each script with fixed base seeds (for example 1000 for the operating points, 3000 for the identification ladder, 4000 for the uplift split, and 5000 for the inspected-only check) offset by the replicate index, so every run is deterministic. Installing the pinned packages into a clean environment reproduces the reported values.
 
 ## Expected outputs
 
