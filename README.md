@@ -25,8 +25,8 @@ All experiments are simulation-based; no administrative data are used or require
 CPU only; CPython 3.11 or newer. Pinned versions (see `requirements.txt`):
 
 ```
-numpy==2.4.4
-scikit-learn==1.8.0
+numpy==2.0.2
+scikit-learn==1.6.1
 matplotlib==3.10.8
 ```
 
