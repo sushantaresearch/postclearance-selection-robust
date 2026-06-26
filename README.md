@@ -88,8 +88,6 @@ Code released under the MIT License (see `LICENSE`).
 
 ## Citation
 
-If you use this code, please cite the paper. This reproducibility package is permanently archived on Zenodo:
+If you use this code, please cite the paper. This reproducibility package is permanently archived on Zenodo at https://doi.org/10.5281/zenodo.20941356 (concept DOI, which always resolves to the latest archived version):
 
-Paul, S. (2026). *Protecting Customs Revenue with Scarce Audit Capacity: Selection-Robust Targeting of Post-Clearance Undervaluation under Label Bias: Reproducibility Package* (v1.0.1) [Software]. Zenodo. https://doi.org/10.5281/zenodo.20941357
-
-The version DOI above resolves to the exact archived release used in the paper (v1.0.1). The concept DOI https://doi.org/10.5281/zenodo.20941356 always resolves to the latest version.
+Paul, S. (2026). *Protecting Customs Revenue with Scarce Audit Capacity: Selection-Robust Targeting of Post-Clearance Undervaluation under Label Bias: Reproducibility Package* [Software]. Zenodo. https://doi.org/10.5281/zenodo.20941356
