@@ -1,6 +1,6 @@
-# Selection-Robust Targeting of Post-Clearance Undervaluation Audits
+# Protecting Customs Revenue with Scarce Audit Capacity: Selection-Robust Targeting of Post-Clearance Undervaluation under Label Bias
 
-Reproducibility package for the paper *Selection-Robust Targeting of Post-Clearance Undervaluation Audits: Correcting for Inspection-Induced Label Bias*.
+Reproducibility package for the paper *Protecting Customs Revenue with Scarce Audit Capacity: Selection-Robust Targeting of Post-Clearance Undervaluation under Label Bias* (sole author: Sushanta Paul).
 
 The paper recasts customs audit targeting as estimation and decision-making under selective labels. Clearance-stage inspection is selective, confounded, and structurally blind to a band of declarations; post-clearance audit reaches the full population on recorded features with selection probabilities the administration sets. Using the post-clearance arm as a full-support, ignorably-assigned arm, the method defines an identified recoverable-duty estimand (cross-fitted doubly-robust), certifies it with sensitivity and assumption-free bounds, targets robustly, and attaches selection-valid conformal intervals with calibrated abstention. It also derives a minimum audit-allocation rule.
 
@@ -88,4 +88,8 @@ Code released under the MIT License (see `LICENSE`).
 
 ## Citation
 
-If you use this code, please cite the paper. This code is permanently archived on Zenodo at https://doi.org/10.5281/zenodo.20735343 (concept DOI, which always resolves to the latest release).
+If you use this code, please cite the paper. This reproducibility package is permanently archived on Zenodo:
+
+Paul, S. (2026). *Protecting Customs Revenue with Scarce Audit Capacity: Selection-Robust Targeting of Post-Clearance Undervaluation under Label Bias: Reproducibility Package* (v1.0.1) [Software]. Zenodo. https://doi.org/10.5281/zenodo.20941357
+
+The version DOI above resolves to the exact archived release used in the paper (v1.0.1). The concept DOI https://doi.org/10.5281/zenodo.20941356 always resolves to the latest version.
